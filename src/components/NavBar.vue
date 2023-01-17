@@ -18,8 +18,14 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn icon="fa-solid fa-magnifying-glass"> </v-btn>
-
-    <v-btn icon="fa-regular fa-heart"> </v-btn>
+    <v-tooltip text="My Garage">
+      <template v-slot:activator="{ props }">
+        <v-btn
+          v-bind="props"
+          class="px-10"
+          icon="fa-solid fa-warehouse"
+        ></v-btn>
+      </template>
+    </v-tooltip>
   </v-app-bar>
 </template>

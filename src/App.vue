@@ -1,18 +1,17 @@
 <template>
   <v-app>
-    <NavBar />
+    <navbar />
     <v-main>
-      <v-row class="text-h2 py-6 my-12" justify="center">
-        Welcome to the Minute Key Motorcycle Club!
-      </v-row>
-      <ContainerGrid />
+      <hero />
+      <list-view />
     </v-main>
-    <Footer />
+    <nav-footer />
   </v-app>
 </template>
 
 <script setup>
-import NavBar from "./components/NavBar.vue";
-import Footer from "./components/Footer.vue";
-import ContainerGrid from "./components/ContainerGrid.vue";
+import navbar from "./components/NavBar.vue";
+import NavFooter from "./components/NavFooter.vue";
+import ListView from "./components/ListView.vue";
+import hero from "./components/Hero.vue";
 </script>
