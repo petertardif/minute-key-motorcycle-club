@@ -48,7 +48,7 @@ export default {
       this.$store.commit("toggleBikeFavoriteStatus", { value: bikeModel });
     },
   },
-  mounted() {
+  created() {
     this.$store.dispatch("fetchBikesData");
   },
 };
