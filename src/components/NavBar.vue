@@ -10,8 +10,7 @@
     </template>
 
     <template v-slot:prepend>
-      <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
-      <v-icon icon="fa-solid fa-motorcycle"></v-icon>
+      <v-btn href="/" icon="fa-solid fa-motorcycle"></v-btn>
     </template>
 
     <v-app-bar-title>Minute Key Motorcycle Club</v-app-bar-title>
@@ -24,6 +23,7 @@
           v-bind="props"
           class="px-10"
           icon="fa-solid fa-warehouse"
+          href="/list"
         ></v-btn>
       </template>
     </v-tooltip>

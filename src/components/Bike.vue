@@ -1,5 +1,5 @@
 <template>
-  <v-card class="py-6 mx-3 my-6">
+  <v-card class="py-6 mx-3 my-6 elevation-8">
     <v-img
       :src="src"
       class="align-end"
@@ -11,9 +11,9 @@
     </v-img>
 
     <v-card-text>
-      <div class="text-h6">
+      <h6 class="text-h6">
         <strong>{{ model }}</strong>
-      </div>
+      </h6>
       <div v-if="detailsAreVisible">
         <div><strong>Year</strong>: {{ year }}</div>
         <div><strong>Color</strong>: {{ color }}</div>
@@ -24,7 +24,7 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="red-lighten-2" @click="toggleDetails"> Learn More </v-btn>
+      <v-btn color="secondary" @click="toggleDetails"> Learn More </v-btn>
 
       <v-spacer></v-spacer>
 
@@ -39,7 +39,7 @@
         color="surface-variant"
         variant="text"
         icon="fa-brands fa-twitter"
-        href="https://twitter.com/intent/tweet?url=https://localhost:3030&text=Check%20out%20Ben's%20awesome%20bikes&hashtags=HirePeteTardif,MinuteKeysNewDevPeteTardif"
+        href="https://twitter.com/intent/tweet?url=https://localhost:3030&text=Check%20out%20Pete's%20awesome%20bikes&hashtags=HirePeteTardif,MinuteKeysNewDevPeteTardif"
         target="_blank"
       >
       </v-btn>
@@ -86,9 +86,6 @@ export default {
       type: Boolean,
       required: false,
       default: false,
-      // validator: function (value) {
-      // 	return value === '1' || value === '0';
-      // },
     },
   },
   emits: ["toggle-favorite"],
@@ -107,3 +104,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h6 {
+  font-size: 24px;
+}
+</style>

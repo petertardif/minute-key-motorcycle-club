@@ -1,0 +1,9 @@
+<template>
+  <v-progress-circular
+    v-if="this.$store.state.isLoading"
+    :size="70"
+    :width="7"
+    color="secondary"
+    indeterminate
+  ></v-progress-circular>
+</template>

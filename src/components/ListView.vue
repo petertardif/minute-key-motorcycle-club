@@ -1,12 +1,7 @@
 <template>
   <v-container fluid>
-    <v-progress-circular
-      v-if="this.$store.state.isLoading"
-      :size="70"
-      :width="7"
-      color="secondary"
-      indeterminate
-    ></v-progress-circular>
+    <spinner />
+    <v-row justify="center"><h2 class="heading my-6">Pete's Bikes</h2></v-row>
     <v-row
       v-if="!this.$store.state.isLoading && !this.$store.state.errorLoadingData"
       justify="center"
@@ -28,18 +23,14 @@
         />
       </v-col>
     </v-row>
-    <v-row
-      v-if="this.$store.state.isLoading && this.$store.state.errorLoadingData"
-      ><p>
-        Error loading data, please try again later or contact the Minute Key
-        team.
-      </p></v-row
-    >
+    <list-view-loading-error />
   </v-container>
 </template>
 
 <script>
 import Bike from "./Bike.vue";
+import Spinner from "./Spinner.vue";
+import ListViewLoadingError from "./ListViewLoadingError.vue";
 
 export default {
   computed: {
@@ -49,6 +40,8 @@ export default {
   },
   components: {
     Bike,
+    Spinner,
+    ListViewLoadingError,
   },
   methods: {
     toggleFavoriteStatus(bikeModel) {
