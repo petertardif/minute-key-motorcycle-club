@@ -39,7 +39,7 @@
         color="surface-variant"
         variant="text"
         icon="fa-brands fa-twitter"
-        href="https://twitter.com/intent/tweet?url=https://localhost:3030&text=Check%20out%20Pete's%20awesome%20bikes&hashtags=HirePeteTardif,MinuteKeysNewDevPeteTardif"
+        href="https://twitter.com/intent/tweet?url=https://minutekeymotorcycleclub.netlify.app/list&text=Check%20out%20Pete's%20awesome%20bikes&hashtags=HirePeteTardif,MinuteKeysNewDevPeteTardif"
         target="_blank"
       >
       </v-btn>
