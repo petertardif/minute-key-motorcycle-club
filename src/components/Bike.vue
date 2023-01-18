@@ -11,7 +11,7 @@
     </v-img>
 
     <v-card-text>
-      <h6 class="text-h6">
+      <h6>
         <strong>{{ model }}</strong>
       </h6>
       <div v-if="detailsAreVisible">
@@ -107,6 +107,6 @@ export default {
 
 <style scoped>
 h6 {
-  font-size: 24px;
+  font-size: 18px;
 }
 </style>
