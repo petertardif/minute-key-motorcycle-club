@@ -19,9 +19,11 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
-  data: () => ({
-    icons: [
+  setup() {
+    const icons = ref([
       {
         name: "fa-brands fa-linkedin",
         href: "https://www.linkedin.com/in/petertardif",
@@ -34,7 +36,9 @@ export default {
         name: "fa-brands fa-github",
         href: "https://www.github.com/petertardif",
       },
-    ],
-  }),
+    ]);
+
+    return { icons };
+  },
 };
 </script>
